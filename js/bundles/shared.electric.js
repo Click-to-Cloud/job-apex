@@ -5374,13 +5374,13 @@ goog.loadModule(function (exports) {
         ie_close('title');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Mono');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/icon-12/icon-12.css');
-        ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/galano/galano.css');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/icon-16/icon-16.css');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/senna/senna.css');
+        ie_close('link');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/icon-16/icon-16.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/job-apex/vendor/codemirror/lib/codemirror.css');
         ie_close('link');
@@ -5389,8 +5389,8 @@ goog.loadModule(function (exports) {
         ie_void('script', null, null, 'src', '/job-apex/js/bundles/shared.electric.js');
         ie_void('script', null, null, 'src', '/job-apex/vendor/senna/senna.js');
         ie_void('script', null, null, 'src', '/job-apex/vendor/codemirror/lib/codemirror.js');
-        ie_void('script', null, null, 'src', '/job-apex/vendor/codemirror/mode/css/css.js');
         ie_void('script', null, null, 'src', '/job-apex/vendor/codemirror/mode/javascript/javascript.js');
+        ie_void('script', null, null, 'src', '/job-apex/vendor/codemirror/mode/css/css.js');
         ie_void('script', null, null, 'src', '/job-apex/vendor/codemirror/mode/xml/xml.js');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/styles/main.css');
         ie_close('link');
@@ -5709,7 +5709,7 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'main');
     ie_open('main', null, null, 'class', 'guide');
     ie_open('div', null, null, 'class', 'docs');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: { text: opt_data.site.title, href: '/job-apex', icon: 'icon-16-hammer' } }, null, opt_ijData);
     $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
     $guide(opt_data, null, opt_ijData);
     ie_close('div');
@@ -5907,7 +5907,7 @@ goog.loadModule(function (exports) {
     var $$temp;
     ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null, 'class', 'content');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, href: '/job-apex', icon: 'icon-16-hammer' } }, null, opt_ijData);
     var dyn10 = opt_data.content;
     if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
     ie_close('main');
@@ -6055,7 +6055,7 @@ goog.loadModule(function (exports) {
    */
   function $tutorials(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null, 'class', 'sidebar-offset');
-    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, icon: 'icon-16-hammer' } }, null, opt_ijData);
+    $templateAlias1({ items: opt_data.site.topbar, style: 'topbar-light', logo: { text: opt_data.site.title, href: '/job-apex', icon: 'icon-16-hammer' } }, null, opt_ijData);
     ie_open('div', null, null, 'class', 'container');
     ie_open('h6', null, null, 'class', 'tutorial-title');
     var dyn11 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
